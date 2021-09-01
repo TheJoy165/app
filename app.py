@@ -1,7 +1,8 @@
-from enum import unique
 from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 from send_mail import send_mail
+
+db.create_all()
 
 app = Flask(__name__)
 
