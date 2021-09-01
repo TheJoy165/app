@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 from send_mail import send_mail
 
-db.create_all()
+
 
 app = Flask(__name__)
 
@@ -71,3 +71,5 @@ def submit():
 
 if __name__ == "__main__":
     app.run()
+   
+db.create_all()
